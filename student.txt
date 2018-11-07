@@ -1,0 +1,38 @@
+***************************************************
+http://www.zdfans.com/软件分享网站
+***************************************************
+
+1.线程池，多线程的应用，配置 ，理解
+2.redis中的数据等新，配置有效时间
+3.RPC原理，重要
+4.请求团险，ecif等各个接口平台时的传输方式
+5.MQ
+6.存储过程
+7.webservice和http的方式调用接口
+	http请求原理，webservice请求原理
+	netty
+
+idea下tomcat乱码解决方案：
+tomcat配置》左侧channel-access》右侧上方server》VMoptions
+
+
+8.权限控制
+
+9.套接字原理，网络五层发送数据原理
+
+10.Java知识梳理  || http://www.runoob.com/基础知识
+
+11.http://edu.51cto.com/center/course/lesson/index?id=76468          SSM框架回顾
+
+
+wget下载
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  -P /opt/devEnvironment/package/ http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz
+
+ --spider下载测试
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  --spider http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz
+
+    /*人民币数字格式转换*/
+    public String getDoubleString(double num) throws Exception {
+        DecimalFormat df = new DecimalFormat("#,##0.00");
+        return df.format(num) + "";
+    }

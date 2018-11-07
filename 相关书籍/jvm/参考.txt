@@ -1,0 +1,56 @@
+package jvmTest;
+
+public class subClass  extends SuperClass{
+	 static int ee = 2;
+     static {
+    	 System.out.println("我是子类"+987);
+     }
+  
+}
+
+
+//
+
+package jvmTest;
+
+public class SuperClass {
+  static  int ee=1;
+    int parent = 111;
+    static String a = "tt";
+    static {
+   	   System.out.println("我是父类"); 
+    }
+    public final static String aa="wwww" ;
+    public final static int sub =254;  //此处为520，按照书上所讲应该会出现在FiledStatic 
+                                       //class文件中的常量池中
+    
+    
+}
+
+
+package jvmTest;
+ /*
+  * 
+  */
+public class FiledStatic{
+	int hehe=2147483647;
+	int haha=144;
+	static String iString = "qwe";
+	static final int i = 123;
+	static int j = 222;
+     public static void main(String[] args) {
+    	 SuperClass[] listq = new SuperClass[10];
+		 System.out.println(subClass.sub);
+		 System.out.println(subClass.aa);
+		 new test();   
+		 
+	}
+}
+
+
+
+
+
+
+
+

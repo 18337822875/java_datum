@@ -1,0 +1,11 @@
+以管理员权限运行dos
+net user administrator /active:yes#开启
+net user administrator /active:no#关闭
+
+
+
+关闭防火墙
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService 
+
+start  2  ——> 3
